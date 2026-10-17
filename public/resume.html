@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071426" />
+    <title>John's Resume</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-width: 320px;
+        height: 100%;
+        margin: 0;
+        background: #071426;
+        color: #ffffff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        display: flex;
+        min-height: 4rem;
+        align-items: center;
+        padding: 0.65rem 1rem;
+        border-bottom: 1px solid #24496e;
+        background: rgba(8, 24, 43, 0.97);
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        padding: 0.55rem 0.8rem;
+        border: 1px solid #24496e;
+        border-radius: 0.65rem;
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      a:hover {
+        border-color: #62b4ff;
+        background: #123052;
+      }
+
+      a:focus-visible {
+        outline: 2px solid #62b4ff;
+        outline-offset: 3px;
+      }
+
+      svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        stroke: #62b4ff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+      }
+
+      iframe {
+        width: 100%;
+        flex: 1;
+        border: 0;
+        background: #0c2038;
+      }
+
+      .fallback {
+        padding: 0.5rem 1rem;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .fallback a {
+        display: inline;
+        padding: 0;
+        border: 0;
+        color: #9bd0ff;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="./" aria-label="Back to portfolio">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        <span>Back to portfolio</span>
+      </a>
+    </header>
+    <iframe src="./resume.pdf" title="John Nguyen's resume">
+      <p class="fallback">
+        Your browser can’t display embedded PDFs.
+        <a href="./resume.pdf">Open the resume PDF</a>.
+      </p>
+    </iframe>
+  </body>
+</html>
